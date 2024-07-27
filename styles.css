@@ -4,7 +4,7 @@ body {
 }
 
 .header-bg {
-    background-image: url('images/header-bg.jpg');
+    background-image: url('https://raw.githubusercontent.com/archimparmar/e-portfolio/512e9100d2bf51df5f286554b2ee3130e64f303e/header-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
