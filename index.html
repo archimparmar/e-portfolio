@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archi Parmar - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header-bg">
@@ -179,57 +179,43 @@
         </div>
     </section>
 
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="section">
         <div class="container">
             <h2 class="text-center mb-4">Contact</h2>
-            <form action="send_inquiry.php" method="POST" target="_top" class="needs-validation" novalidate>
-                <div class="mb-3">
-                    <label for="fullname" class="form-label">Fullname:</label>
-                    <input type="text" id="fullname" name="fullname" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please enter your fullname.
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="font-size: 21px;">I'd love to hear from you! Whether you have a question, a collaboration idea, or just want to connect, feel free to drop me a message through social media or email. Let’s start a conversation and explore new possibilities together!</p>
+                    <div class="social-media-div">
+                        <a href="https://github.com/archimparmar" class="icon-button" target="_blank" rel="noopener noreferrer" name="Github" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-github" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #333;"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/archi-parmar-3169aa284" class="icon-button" target="_blank" rel="noopener noreferrer" name="LinkedIn" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-linkedin-in" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #0077b5;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/archi._parmar?igsh=MWRsNnNybGR4cDkxcg==" class="icon-button" target="_blank" rel="noopener noreferrer" name="Instagram" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-instagram" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #e4405f;"></i>
+                        </a>
+                        <a href="mailto:parmararchi19@gmail.com" class="icon-button" target="_blank" rel="noopener noreferrer" name="Gmail" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-google" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #d14836;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61561192220903&mibextid=ZbWKwL" class="icon-button" target="_blank" rel="noopener noreferrer" name="Facebook" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-facebook-f" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #3b5998;" ></i>
+                        </a>
+                        <a href="https://www.youtube.com/@parmararchi5390" class="icon-button" target="_blank" rel="noopener noreferrer" name="YouTube" style="text-decoration: none; padding: 10px;">
+                            <i class="fab fa-youtube" style="width: 30px; height: 30px; font-size: 30px; text-decoration: none; color: #ff0000;"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="resume.pdf" class="btn btn-primary btn-lg">Download Resume</a>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please enter a valid email address.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="subject" class="form-label">Subject:</label>
-                    <input type="text" id="subject" name="subject" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Please enter the subject.
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message:</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                    <div class="invalid-feedback">
-                        Please enter your message.
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Inquiry</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <footer class="footer bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2024 Archi Parmar. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/archi-parmar-3169aa284" class="text-white me-3">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/" class="text-white me-3">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/" class="text-white">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
         </div>
     </footer>
 
@@ -295,8 +281,8 @@
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
