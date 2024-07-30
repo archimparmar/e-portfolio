@@ -30,28 +30,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-document.getElementById("contactForm").addEventListener("submit", function(event){
-    event.preventDefault();
-
-    var formData = new FormData(this);
-
-    fetch("e1.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        var formResponse = document.getElementById("formResponse");
-        if (data.status === "success") {
-            formResponse.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
-        } else {
-            formResponse.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-    });
-});
-
-
