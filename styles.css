@@ -1,10 +1,12 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
+/* Header Styles */
 .header-bg {
-    background-image: url('https://raw.githubusercontent.com/archimparmar/e-portfolio/512e9100d2bf51df5f286554b2ee3130e64f303e/header-bg.jpg');
+    background-image: url('images/header-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -22,8 +24,16 @@ body {
     font-size: 1.2rem;
 }
 
+/* Section Styles */
 .section {
     padding: 60px 0;
+}
+
+/* Section Heading Styles */
+.section h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .text-center {
@@ -34,6 +44,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Form Styles */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -61,6 +72,7 @@ textarea {
     resize: vertical;
 }
 
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -82,17 +94,14 @@ textarea {
     background-color: #0056b3;
 }
 
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
+/* Profile Photo Styles */
 .profile-photo {
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
 
+/* Timeline Styles */
 .timeline {
     position: relative;
     margin: 0 auto;
@@ -136,12 +145,14 @@ textarea {
     margin: 0;
 }
 
+/* Container Styles */
 .container {
     max-width: 1200px; 
     margin: 0 auto;
     padding: 0 20px; 
 }
 
+/* Certification List Styles */
 .certification-list {
     list-style-type: none;
     padding: 0;
@@ -180,7 +191,7 @@ textarea {
     }
 }
 
-
+/* Project Card Styles */
 .project-card {
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -190,6 +201,7 @@ textarea {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Image Slider Styles */
 .image-slider {
     position: relative;
 }
@@ -204,19 +216,51 @@ textarea {
     display: block;
 }
 
+/* Footer Styles */
 .footer {
     background: #333;
 }
 
-.social-icons i {
-    font-size: 1.5rem;
-    transition: color 0.3s;
+/* Social Media Icons */
+@media (max-width: 768px) {
+    .social-media-div {
+        text-align: center;
+    }
+}
+.social-media-div {
+    font-size: 0; /* Remove font-size inheritance */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.social-icons i:hover {
-    color: #007bff;
+.icon-button {
+    background-color: #333;
+    color: white;
+    font-size: 24px; /* Size of the icon */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.icon-button i {
+    margin: 0; /* Ensure no margin is applied to the icon */
+}
+
+.icon-button:hover {
+    opacity: 0.8;
+}
+
+/* Fade-in Animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
