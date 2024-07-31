@@ -6,7 +6,7 @@ body {
 
 /* Header Styles */
 .header-bg {
-    background-image: url('images/header-bg.jpg');
+    background-image: url('https://github.com/archimparmar/e-portfolio/blob/images/header-bg.jpg?raw=true');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -235,7 +235,6 @@ textarea {
 }
 
 .icon-button {
-    background-color: #333;
     color: white;
     font-size: 24px; /* Size of the icon */
     display: inline-flex;
